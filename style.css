@@ -1,0 +1,179 @@
+p {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  margin: 0;
+  background-color: #0d192b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  margin: 0 auto;
+  width: 327px;
+  border-radius: 15px;
+  background-color: #14253d;
+}
+
+.card .container {
+  margin: 24px;
+  margin-top: 0px;
+}
+
+.card h2 {
+  color: white;
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.card .description {
+  font-size: 18px;
+  color: #8bacda;
+  font-weight: 300;
+  margin: 12px 0 16px;
+}
+
+.card .pricing {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #2f415b;
+}
+
+.card .pricing p {
+  display: block;
+  align-self: center;
+  display: block;
+}
+
+.card .pricing img {
+   align-self: center;
+}
+
+.card .pricing .eth {
+  display: flex;
+  flex-direction: row;
+  color: #00fff7;
+}
+
+.card .pricing .eth img {
+  width: 11px;
+  height: 18px;
+  margin: 0;
+}
+
+.card .pricing .eth p {
+  font-weight: 700;
+  padding-left: 6px;
+}
+
+.card .pricing .time-remaining {
+  display: flex;
+  flex-direction: row;
+}
+
+.card .pricing .time-remaining img {
+  width: 17px;
+  height: 17px;
+}
+
+.card .pricing .time-remaining p {
+  padding-left: 7.7px;
+  color: #8bacda;
+}
+
+.card .nft-image {
+  width: 278px;
+  border-radius: 15px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.card footer {
+  display: flex;
+  margin-top: 16px;
+  padding-top: 24px;
+}
+
+.card footer .avatar img {
+  width: 33px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.card footer .avatar-name {
+  align-self: center;
+  margin-left: 16px;
+}
+
+.card footer .avatar-name p {
+  font-weight: 400;
+  color: #8bacda;
+}
+
+.card footer .avatar-name .name {
+  margin-left: 5px;
+  color: white;
+}
+
+.card .image-overlay {
+  width: 302px;
+  height: 302px;
+  background-color: rgba(0, 255, 248, 0);
+  border-radius: 15px;
+  margin-top: 24px;
+  position: absolute;
+}
+
+.card .image-overlay img {
+  width: 48px;
+  height: 48px;
+  margin: 127px;
+  visibility: hidden;
+}
+
+.card .image-overlay:hover {
+  cursor: pointer;
+  background-color: rgba(0, 255, 248, 0.5);
+}
+.card .image-overlay:hover img {
+  visibility: visible;
+}
+
+@media only screen and (min-width: 376px) {
+  .card {
+    width: 350px;
+  }
+  .card .nft-image {
+    width: 302px;
+  }
+  .card .description {
+    margin: 16px 0 24px;
+  }
+  .card .pricing {
+    padding-bottom: 24px;
+  }
+  .card footer {
+    padding-bottom: 32px;
+  }
+}
+
+
+.attribution {
+  color: white;
+  text-align: center;
+}
+
+.attribution a {
+  color: #8bacda;
+}
